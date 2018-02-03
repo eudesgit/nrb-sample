@@ -17,11 +17,19 @@ class Cart extends Component {
           error: null,
           is_loaded: false,
           data: [],
+          no_client: false,
         }
 
     }
 
     componentDidMount ( ) {
+
+        if (this.props.client_id === undefined) {
+            this.state.no_client = true
+            this.state.is_loaded = true
+            return false
+        }        
+
         fetch(this.api_url + "/cart/" + this.props.client_id)
             .then(res => res.json())
             .then(
@@ -63,7 +71,9 @@ class Cart extends Component {
             </li>
         )
 
-        if (false === this.state.is_loaded) {
+        if (true == this.state.no_client) {
+            return (<p>No logged in client</p>)
+        } else if (false === this.state.is_loaded) {
             return (<p>Loading ...</p>)
         } else {
             return (
