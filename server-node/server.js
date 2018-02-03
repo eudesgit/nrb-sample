@@ -67,6 +67,22 @@ server.set('port', process.env.PORT || PORT)
  * You may need a routing class/component and/or some middleware stuff
  */
 
+server.get('/', (req ,res) => {
+
+    res.append('Access-Control-Allow-Origin', CORS)
+
+    let welcome = "Welcome, this is the sample Node server<br />" 
+                + "Example calls:<br />"
+                + "localhost:3001/v1/products<br />"
+                + "localhost:3001/v1/products/1<br />"
+                + "localhost:3001/v1/clients<br />"
+                + "localhost:3001/v1/clients/1<br />"
+                + "localhost:3001/v1/cart/2<br />"
+
+    res.send(welcome)
+
+})
+
 /**
  * Products API
  * /server/v{version}/products
