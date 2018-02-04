@@ -55,7 +55,9 @@ Then, start your React development environment
 npm start
 ```
 
-Your React dev environment will run on localhost:3000. It'll probably open your browser with the app fully operational.
+Your React dev environment will run on localhost:3000. Probably It'll automatically open on your browser. 
+
+The app will be now fully operational.
 
 If it doesn't work out, take a look at the requirements, install them all and I'm sure you'll figure it out.
 
