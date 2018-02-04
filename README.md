@@ -10,14 +10,14 @@ Follow the instructions to download and run the app on Node.JS and React develop
 
 ### Setup
 
-* Install Node.JS/NPM
+* [Install Node.JS/NPM](https://nodejs.org/en/)
 * Clone/download the repository to your local folder.
 * Access nrb-sample/server-node
 * Run 'npm install' to install Node side dependencies.
 * Access nrb-sample/web-react
 * Run 'npm install' to install React and its dependecies.
 
-Or
+Or start your own Node and React environment doing the following:
 
 * Install Node.JS/NPM
 * Install Express.
@@ -26,17 +26,26 @@ Or
 
 ### Running
 
+First start the server.
 
+* Access nrb-sample/server-node
+* Run server.js
 
-your folder and run 'npm install'
-React and all components will be installed
-Run 'npm start'
+Your Node server will run on localhost:3001. Go check it out on your browser.
 
-Or
+Then, start your React development environment
 
-Set up your React development environment
-https://reactjs.org/docs/add-react-to-a-new-app.html
+* Access nrb-sample/server-node
+* Run 'npm start'
 
-Copy this repository into your local React app folder.
+Your React dev environment will run on localhost:3000. It'll probably open your browser with the app fully operational.
 
-Run 'npm start'
+If it doesn't work out, take a look at the requirements, install everything and you'll figure it out.
+
+## Requirements
+
+* Node.JS
+* React.JS
+* Bootstrap 4
+* Express
+* React Router
