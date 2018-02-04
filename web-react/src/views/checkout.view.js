@@ -32,11 +32,11 @@ class Checkout extends Component {
 
                 <div class="row">
                     <div class="col-md-4 order-md-2 mb-4">
-                        <Cart client_id={this.get_url_id()} items={[{"name":"Product 1","price":10},{"name":"Product 2","price":15}]} />
+                        <Cart client_id={this.get_url_id()} />
                     </div>{/* END col */}
 
                     <div class="col-md-8 order-md-1">
-                        <CheckoutForm />
+                        <CheckoutForm client_id={this.get_url_id()} />
                     </div>{/* END col */}
 
                 </div>{/* END row */}
