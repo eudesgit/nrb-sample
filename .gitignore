@@ -1,2 +1,4 @@
 server-node/node_modules
+server-node/package-lock.json
 web-react/node_modules
+web-react/package-lock.json
